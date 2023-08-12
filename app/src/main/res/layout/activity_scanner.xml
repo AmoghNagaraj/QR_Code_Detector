@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScannerActivity"
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/scanner"
+        android:id="@+id/IVCaptureImage"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/IVCaptureImage"
+        android:id="@+id/idTVDetectedText"
+        android:textColor="@color/black"
+        android:text="Your result will appear here"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        />
+
+    <Button
+        android:id="@+id/idBtnSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/idTVDetectedText"
+        android:layout_marginTop="30dp"
+        android:text="QR code Snap"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/material_dynamic_primary80"/>
+
+    <Button
+        android:id="@+id/idBtnDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/idBtnSnap"
+        android:layout_marginTop="30dp"
+        android:text="Detect QR value"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/material_dynamic_primary80"/>
+
+    <ImageView
+        android:id="@+id/IVCaptureImage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+
+
+    <Button
+        android:id="@+id/idBtnSnappy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/idBtnDetect"
+        android:layout_marginTop="30dp"
+        android:text="Engine Pic"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/material_dynamic_primary80"/>
+
+    <Button
+        android:id="@+id/idBtnSaveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/idBtnSnappy"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:text="Save Image"
+        android:textAllCaps="false"
+        android:background="@drawable/button_back"
+        app:backgroundTint="@color/teal_200" />
+
+
+</RelativeLayout>
